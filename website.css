@@ -1,0 +1,58 @@
+#book-search-input {
+    background: #ffffff7f;
+}
+
+.book-summary {
+    background: #ffffff00;
+}
+
+.book-body {
+    background: #ffffff00;
+}
+
+.navigation.navigation-prev {
+    display: none;
+}
+
+.navigation.navigation-next {
+    display: none;
+}
+
+.gitbook-link {
+    display: none;
+}
+
+.bg-blur {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.img-blur {
+    position:fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-dark {
+    width: 100%;
+    height: 100%;
+    background: #ffffff7f;
+    position: absolute;
+}
+
+.div-kawaii {
+    position: fixed;
+    bottom: -10%;
+    right: -5%;
+}
+
+.img-kawaii {
+    width: 500px;
+}

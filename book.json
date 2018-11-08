@@ -1,0 +1,19 @@
+{
+    "title": "yyc12345 の Blog",
+    "description": "",
+    "author": "yyc12345",
+    "language": "zh-hans",
+    "gitbook": "3.2.3",
+    "plugins": [
+        "addcssjs"
+    ],
+    "structure": {
+        "readme": "HOME.md"
+    },
+    "pluginsConfig": {
+        "addcssjs": {
+            "js": ["./website.js"],
+            "css": ["./website.css"]
+        }
+    }
+}
