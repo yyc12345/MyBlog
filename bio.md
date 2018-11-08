@@ -13,9 +13,10 @@
 * 大学生，就读学校不便透露，专业是微电子科学与工程
 * 1.9m
 * 100kg
-* Apple 一生黑。AOSP 最高。仰慕 Lineageos，MIUI 黑
+* Apple 一生黑。AOSP 最高。仰慕 Lineageos，MIUI 黑。三观不合的话，您可以选择忽略我。
 * Linux 基本不会。天天在 Android 上用 Termux 跑 C，C++，Python
 * Debian 一生推
 * 曾今用过 Debian x KDE，没几个月被我搞坏后再也没碰过实体机 Linux 了
 * 最近在学习 Xamarin.Android 和 Unity
-* 英语特差，有学习日语的欲望，~~曾学过 2 句德语，~~想去日本和德国
+* 英语特差，有学习日语的欲望，~~曾学过 2 句德语~~，想去日本和德国
+* 游戏不玩大型的。最喜欢玩Minecraft，基本不会Ballance但是仍然坚持（

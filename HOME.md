@@ -6,4 +6,4 @@
 
 一位*辣鸡*
 
-点击左侧的项目来了解*辣鸡*的我（:cannotlook:
+点击左侧的项目来了解*辣鸡*的我（![cannotlook](./assets/emoji/cannotlook.jpg)

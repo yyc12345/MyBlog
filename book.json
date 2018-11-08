@@ -5,7 +5,8 @@
     "language": "zh-hans",
     "gitbook": "3.2.3",
     "plugins": [
-        "addcssjs"
+        "addcssjs",
+        "expandable-chapters-small"
     ],
     "structure": {
         "readme": "HOME.md"
