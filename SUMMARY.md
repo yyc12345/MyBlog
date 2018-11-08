@@ -6,7 +6,7 @@
 
 * [职责](work/README.md)
   - [Ballance Discord Moderator](work/discord.md)
-  - [Ballance Wiki Admin](work/ballance-wiki.md)
+  - [Ballance Wiki Maintainer](work/ballance-wiki.md)
 
 * [工程列表](programming/README.md)
   - [Secure IM](programming/im.md)
