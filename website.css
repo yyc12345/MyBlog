@@ -1,50 +1,14 @@
-#book-search-input {
-    background: #ffffff7f;
-}
-
-.book-summary {
-    background: #ffffff00;
-}
-
-.book-body {
-    background: #ffffff00;
-}
-
-.navigation.navigation-prev {
-    display: none;
-}
-
-.navigation.navigation-next {
-    display: none;
-}
-
-.gitbook-link {
-    display: none;
-}
-
+/*global theme*/
 .bg-blur {
     position: absolute;
     width: 100%;
     height: 100%;
-
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(5px);
 }
 
 .img-blur {
     position:fixed;
     width: 100%;
     height: 100%;
-}
-
-.bg-dark {
-    width: 100%;
-    height: 100%;
-    background: #ffffff7f;
-    position: absolute;
 }
 
 .div-kawaii {
@@ -55,4 +19,59 @@
 
 .img-kawaii {
     width: 500px;
+}
+
+.divider {
+    display: none;
+}
+
+.navigation.navigation-prev {
+    display: none;
+}
+
+.navigation.navigation-next {
+    display: none;
+}
+
+#book-search-input {
+    display: none;
+}
+
+/*day theme*/
+
+
+.book-summary {
+    background: #fafafa7f;
+}
+
+.book-body {
+    background: #ffffff7f;
+}
+
+/*night theme*/
+
+.book.color-theme-2 .book-summary {
+    color: #bcc1d2;
+    background: #2d31437f;
+    border-right: none;
+}
+
+.book.color-theme-2 .book-body {
+    color: #bdcadb;
+    background: #1c1f2b7f;
+}
+
+.book.color-theme-2 .book-summary ul.summary li a, .book.color-theme-2 .book-summary ul.summary li span {
+    color: #f4f4f5;
+    background: transparent;
+}
+
+.book.color-theme-2 .book-summary ul.summary li.active > a, .book.color-theme-2 .book-summary ul.summary li a:hover {
+    color: #f4f4f5;
+    background: #2527377f;
+}
+
+.book.color-theme-2 .book-body .page-wrapper .page-inner section {
+    background: transparent/*#1c1f2b*/;
+    color: #bdcadb;
 }
