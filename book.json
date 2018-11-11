@@ -13,7 +13,10 @@
     },
     "pluginsConfig": {
         "addcssjs": {
-            "js": ["./website.js"],
+            "js": [
+                "./website.js",
+                "./particle.js"
+            ],
             "css": ["./website.css"]
         }
     }

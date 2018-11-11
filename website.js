@@ -1,14 +1,20 @@
-window.addEventListener("load", add_bk);
-window.addEventListener("load", add_kawaii);
-window.addEventListener("load", remove_url);
-window.addEventListener("load", remove_theme);
+window.addEventListener("load", start);
 document.addEventListener("DOMSubtreeModified", remove_url);
 document.addEventListener("DOMSubtreeModified", remove_theme);
+
+function start(){
+    add_kawaii();
+    add_bk();
+    remove_url();
+    remove_theme();
+    global_startup_fx();
+}
 
 //add a blur
 function add_bk() {
     var body = document.body;
     var item = document.createElement("div");
+    var particle = document.createElement("canvas")
     //var dark = document.createElement("div");
 
     var date = new Date;
@@ -27,8 +33,10 @@ function add_bk() {
 
     //dark.classList.add("bg-dark");
     item.classList.add("bg-blur");
+    particle.id="canvas-particle"
     //body.prepend(dark);
     body.prepend(item);
+    body.append(particle);
 }
 
 function add_kawaii() {
@@ -36,6 +44,7 @@ function add_kawaii() {
     var item = document.createElement("div");
     item.innerHTML = "<img class=\"img-kawaii\" src=\"./assets/kawakaze.png\"></img>";
     item.classList.add("div-kawaii");
+    item.addEventListener("click", GLOBAL_AVOID);
     body.append(item);
 }
 
