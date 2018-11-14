@@ -1,3 +1,8 @@
+var SAKURA_WIDTH = 110, SAKURA_HEIGHT = 108, LEAF_WIDTH = 108, LEAF_HEIGHT = 108;
+
+var mouse_wind = 0.0;
+
+var DPR;
 //定义两个对象数据
 //分别是drops下落物体对象
 //和反弹物体bounces对象
@@ -29,7 +34,7 @@ window.requestAnimFrame =
 var image_leaf = new Image()
 var image_sakura = new Image()
 
-var global_avoid_status = false;
+var global_avoid_status = true;
 var total_avoid_status = false;
 function GLOBAL_AVOID() {
     var status = !global_avoid_status;
@@ -94,21 +99,24 @@ var Drop = function () {
     this.pos = new Vector(Math.random() * canvas.width, 0);
     //设置下落元素的大小
     //通过调用的OPTS函数的半径范围进行随机取值
-    this.radius = (OPTS.size_range[0] + Math.random() * OPTS.size_range[1]) * DPR;
+    this.radius = (OPTS.size_range[0] + Math.random() * (OPTS.size_range[1] - OPTS.size_range[0])) * DPR;
     //获得drop初始速度
     //通过调用的OPTS函数的速度范围进行随机取值
-    this.speed = (OPTS.speed[0] + Math.random() * OPTS.speed[1]) * DPR;
+    this.speed = (OPTS.speed[0] + Math.random() * (OPTS.speed[1] - OPTS.speed[0])) * DPR;
     this.prev = this.pos;
     //将角度乘以 0.017453293 （2PI/360）即可转换为弧度。
-    var eachAnger = 0.017453293;
+    //var eachAnger = 0.017453293;
     //获得风向的角度
-    wind_anger = OPTS.wind_direction * eachAnger;
+    //wind_anger = OPTS.wind_direction * eachAnger;
     //获得横向加速度 
-    speed_x = this.speed * Math.cos(wind_anger);
+    this.max_speed_x = OPTS.max_wind * Math.random();
     //获得纵向加速度
-    speed_y = - this.speed * Math.sin(wind_anger);
+    speed_y = this.speed;
     //绑定一个速度实例
-    this.vel = new Vector(speed_x, speed_y);
+    this.vel = new Vector(0, speed_y);
+
+    this.rotate_speed = (OPTS.rotate_speed[0] + Math.random() * (OPTS.rotate_speed[1] - OPTS.rotate_speed[0])) * 0.017453293;
+    this.current_rotate = (Math.random() * 360) * 0.017453293;
 };
 //公有方法-update 
 Drop.prototype.update = function () {
@@ -117,29 +125,48 @@ Drop.prototype.update = function () {
     if (OPTS.hasGravity) {
         this.vel.y += gravity;
     }
+    this.vel.x = this.max_speed_x * mouse_wind;
     //
     this.pos.add(this.vel);
+
+    if (OPTS.rotate) {
+        this.current_rotate += this.rotate_speed;
+        if (this.current_rotate >= Math.PI * 2) {
+            this.current_rotate -= Math.PI * 2;
+        }
+    }
+
 };
 //公有方法-draw
 Drop.prototype.draw = function () {
-    ctx.beginPath();
-    ctx.moveTo(this.pos.x, this.pos.y);
-    //目前只分为两种情况，一种是rain 即贝塞尔曲线
+    //rain 即贝塞尔曲线
     if (OPTS.type == "rain") {
+        ctx.beginPath();
+        ctx.moveTo(this.pos.x, this.pos.y);
         ctx.moveTo(this.prev.x, this.prev.y);
         var ax = Math.abs(this.radius * Math.cos(wind_anger));
         var ay = Math.abs(this.radius * Math.sin(wind_anger));
         ctx.bezierCurveTo(this.pos.x + ax, this.pos.y + ay, this.prev.x + ax, this.prev.y + ay, this.pos.x, this.pos.y);
         ctx.stroke();
-        //另一种是snow--即圆形 
+        //snow--即圆形 
     } else if (OPTS.type == "snow") {
+        ctx.beginPath();
+        //ctx.moveTo(this.pos.x, this.pos.y);
         ctx.moveTo(this.pos.x, this.pos.y);
         ctx.arc(this.pos.x, this.pos.y, this.radius, 0, Math.PI * 2);
         ctx.fill();
     } else if (OPTS.type == "leaf") {
-        ctx.drawImage(image_leaf, this.pos.x, this.pos.y, 108 * this.radius, 108 * this.radius);
+        ctx.translate(this.pos.x - LEAF_WIDTH * this.radius / 2, this.pos.y - LEAF_HEIGHT * this.radius / 2);
+        ctx.rotate(this.current_rotate);
+        ctx.drawImage(image_leaf, - (LEAF_WIDTH * this.radius / 2), - (LEAF_HEIGHT * this.radius / 2), LEAF_WIDTH * this.radius, LEAF_HEIGHT * this.radius);
+        ctx.rotate(-this.current_rotate);
+        ctx.translate(-(this.pos.x - LEAF_WIDTH * this.radius / 2), -(this.pos.y - LEAF_HEIGHT * this.radius / 2));
     } else {
-        ctx.drawImage(image_sakura, this.pos.x, this.pos.y, 57 * this.radius, 54 * this.radius);
+        ctx.translate(this.pos.x - SAKURA_WIDTH * this.radius / 2, this.pos.y - SAKURA_HEIGHT * this.radius / 2);
+        ctx.rotate(this.current_rotate);
+        ctx.drawImage(image_sakura, - (SAKURA_WIDTH * this.radius / 2), - (SAKURA_HEIGHT * this.radius / 2), SAKURA_WIDTH * this.radius, SAKURA_HEIGHT * this.radius);
+        ctx.rotate(-this.current_rotate);
+        ctx.translate(-(this.pos.x - SAKURA_WIDTH * this.radius / 2), -(this.pos.y - SAKURA_HEIGHT * this.radius / 2));
     }
 
 };
@@ -275,8 +302,10 @@ function init_leaf() {
         type: "leaf", // drop类型，有rain / snow / leaf /sakura
         speed: [1.5, 2.5], //速度范围
         size_range: [0.1, 0.4],//大小半径范围
+        rotate: true,
+        rotate_speed: [1, 2],
         hasBounce: false, //是否有反弹效果or false,
-        wind_direction: -105, //角度
+        max_wind: 10,
         hasGravity: false, //是否有重力考虑
         id: "canvas-particle",
         maxNum: 300,
@@ -288,9 +317,11 @@ function init_sakura() {
     init({
         type: "sakura", // drop类型，有rain / snow / leaf /sakura
         speed: [1.5, 2.5], //速度范围
-        size_range: [0.4, 0.6],//大小半径范围
+        size_range: [0.1, 0.2],//大小半径范围
+        rotate: true,
+        rotate_speed: [1, 2],
         hasBounce: false, //是否有反弹效果or false,
-        wind_direction: -105, //角度
+        max_wind: 10,
         hasGravity: false, //是否有重力考虑
         id: "canvas-particle",
         maxNum: 300,
@@ -303,8 +334,10 @@ function init_rain() {
         type: "rain", // drop类型，有rain / snow / leaf /sakura
         speed: [0.4, 2.5], //速度范围
         size_range: [0.5, 1.5],//大小半径范围
+        rotate: false,
+        rotate_speed: [1, 2],
         hasBounce: true, //是否有反弹效果or false,
-        wind_direction: -105, //角度
+        max_wind: 10,
         hasGravity: true, //是否有重力考虑
         id: "canvas-particle",
         maxNum: 300,
@@ -317,8 +350,10 @@ function init_snow() {
         type: "snow", // drop类型，有rain / snow / leaf /sakura
         speed: [1.0, 2.5], //速度范围
         size_range: [3, 5],//大小半径范围
+        rotate: false,
+        rotate_speed: [1, 2],
         hasBounce: false, //是否有反弹效果or false,
-        wind_direction: -105, //角度
+        max_wind: 10,
         hasGravity: false, //是否有重力考虑
         id: "canvas-particle",
         maxNum: 300,

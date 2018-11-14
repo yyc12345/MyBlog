@@ -1,4 +1,8 @@
 /*global theme*/
+audio {
+    display: none;
+}
+
 #canvas-particle {
     top: 0;
     left: 0;
@@ -26,8 +30,18 @@
     right: -5%;
 }
 
+.div-kawaii-lite {
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+}
+
 .img-kawaii {
     width: 500px;
+}
+
+.img-kawaii-lite {
+    width: 128px;
 }
 
 .divider {
@@ -44,6 +58,35 @@
 
 #book-search-input {
     display: none;
+}
+
+/*button*/
+button#switch {
+    /*animation*/
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.2s;
+
+    background-color: #008CBA; 
+    color: white;
+    border: 0;
+
+    margin: 5px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+
+}
+
+button#switch:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+button#switch:disabled{
+    opacity: 0.6;
+    cursor: not-allowed;
 }
 
 /*day theme*/

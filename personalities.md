@@ -1,6 +1,6 @@
 # 性格
 
-* 16 Personalities - [INFP \(Mediator\)](https://www.16personalities.com/infp-personality)
+* 16 Personalities - [INFP-T \(Mediator\)](https://www.16personalities.com/infp-personality)
 * 性取向 null。在恋爱与性有关的方面具有轻微心理障碍
 * 直的，谁说我弯我打谁
 * 曾经发誓永不女装
