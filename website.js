@@ -33,7 +33,7 @@ function check_mobile() {
 
 function mouse_move(e) {
     if (ban_mouse_wind) return;
-    var e = event || window.event;
+    var e = window.event || arguments[0];
     var half = canvasWidth / 2;
     mouse_wind = (e.clientX - half) / half;
 }
