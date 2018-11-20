@@ -2,6 +2,7 @@ window.addEventListener("load", start);
 document.addEventListener("DOMSubtreeModified", remove_url);
 document.addEventListener("DOMSubtreeModified", remove_theme);
 document.addEventListener("DOMSubtreeModified", add_switch);
+document.addEventListener("DOMSubtreeModified", add_mouse_switch);
 document.addEventListener("DOMSubtreeModified", add_kawaii_switch);
 document.addEventListener("mousemove", mouse_move);
 
@@ -14,6 +15,7 @@ function start() {
     remove_theme();
     global_startup_fx();
     add_switch();
+    add_mouse_switch();
     add_kawaii_switch();
     check_kawaii_status();
 }
@@ -30,6 +32,7 @@ function check_mobile() {
 }
 
 function mouse_move(e) {
+    if (ban_mouse_wind) return;
     var e = event || window.event;
     var half = canvasWidth / 2;
     mouse_wind = (e.clientX - half) / half;
@@ -167,4 +170,26 @@ function check_kawaii_status(){
             document.getElementsByClassName("div-kawaii-lite")[0].style="display: none;";
         }
     }
+}
+
+function add_mouse_switch() {
+    if ($(".mouse-switch-btn").length != 0) return;
+    var summary = document.getElementsByClassName("book-summary")[0];
+    var btn = document.createElement("button");
+    btn.style = "width:95%;margin-top:5px;";
+    btn.innerHTML = "禁用鼠标移动效果: " + (ban_mouse_wind ? "是" : "否");
+    btn.classList.add("mouse-switch-btn");
+    btn.id = "switch";
+    btn.addEventListener("click", switch_mouse_btn_click);
+    summary.append(btn);
+}
+
+function switch_mouse_btn_click() {
+    if (ban_mouse_wind){
+        ban_mouse_wind = false;
+    } else {
+        ban_mouse_wind = true;
+        mouse_wind = -0.2;
+    }
+    document.getElementsByClassName("mouse-switch-btn")[0].innerHTML = "禁用鼠标移动效果: " + (ban_mouse_wind ? "是" : "否");
 }

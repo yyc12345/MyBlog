@@ -1,6 +1,7 @@
 var SAKURA_WIDTH = 110, SAKURA_HEIGHT = 108, LEAF_WIDTH = 108, LEAF_HEIGHT = 108;
 
-var mouse_wind = 0.0;
+var mouse_wind = -0.2;
+var ban_mouse_wind = true;
 
 var DPR;
 //定义两个对象数据
@@ -142,11 +143,12 @@ Drop.prototype.draw = function () {
     //rain 即贝塞尔曲线
     if (OPTS.type == "rain") {
         ctx.beginPath();
-        ctx.moveTo(this.pos.x, this.pos.y);
+        //ctx.moveTo(this.pos.x, this.pos.y);
         ctx.moveTo(this.prev.x, this.prev.y);
-        var ax = Math.abs(this.radius * Math.cos(wind_anger));
-        var ay = Math.abs(this.radius * Math.sin(wind_anger));
-        ctx.bezierCurveTo(this.pos.x + ax, this.pos.y + ay, this.prev.x + ax, this.prev.y + ay, this.pos.x, this.pos.y);
+        //var ax = Math.abs(this.radius * Math.cos(wind_anger));
+        //var ay = Math.abs(this.radius * Math.sin(wind_anger));
+        //ctx.bezierCurveTo(this.pos.x + ax, this.pos.y + ay, this.prev.x + ax, this.prev.y + ay, this.pos.x, this.pos.y);
+        ctx.lineTo(this.pos.x,this.pos.y);
         ctx.stroke();
         //snow--即圆形 
     } else if (OPTS.type == "snow") {
@@ -305,7 +307,7 @@ function init_leaf() {
         rotate: true,
         rotate_speed: [1, 2],
         hasBounce: false, //是否有反弹效果or false,
-        max_wind: 10,
+        max_wind: 3,
         hasGravity: false, //是否有重力考虑
         id: "canvas-particle",
         maxNum: 300,
@@ -321,7 +323,7 @@ function init_sakura() {
         rotate: true,
         rotate_speed: [1, 2],
         hasBounce: false, //是否有反弹效果or false,
-        max_wind: 10,
+        max_wind: 3,
         hasGravity: false, //是否有重力考虑
         id: "canvas-particle",
         maxNum: 300,
@@ -337,7 +339,7 @@ function init_rain() {
         rotate: false,
         rotate_speed: [1, 2],
         hasBounce: true, //是否有反弹效果or false,
-        max_wind: 10,
+        max_wind: 5,
         hasGravity: true, //是否有重力考虑
         id: "canvas-particle",
         maxNum: 300,
@@ -353,7 +355,7 @@ function init_snow() {
         rotate: false,
         rotate_speed: [1, 2],
         hasBounce: false, //是否有反弹效果or false,
-        max_wind: 10,
+        max_wind: 3,
         hasGravity: false, //是否有重力考虑
         id: "canvas-particle",
         maxNum: 300,
