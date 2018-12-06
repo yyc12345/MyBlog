@@ -14,7 +14,7 @@
   - [TenThousandWindows8](programming/10000windows8.md)
   - [bus_rode](programming/bus_rode.md)
   - [gitbook-plugin-chinese-video](programming/gitbook-plugin-chinese-video.md)
-  - [ballance-tools](programming/ballance_tools.md)
+  - [ballance_tools](programming/ballance_tools.md)
   - [bili-live-dm-console](programming/bili-live-dm-console.md)
 
 * [我的贡献](contribution/README.md)

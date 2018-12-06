@@ -4,7 +4,7 @@
 
 * [Original Repository](https://github.com/open-course/gitbook-plugin-bilibili)
 * [My fork repository](https://github.com/yyc12345/gitbook-plugin-bilibili)
-* [Gitbook page](https://plugins.gitbook.com/plugin/bilibili)
+* [Gitbook plugin page](https://plugins.gitbook.com/plugin/bilibili)
 * [NPM page](https://www.npmjs.com/package/gitbook-plugin-bilibili)
 
 ## 贡献过程
