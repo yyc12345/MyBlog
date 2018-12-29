@@ -143,7 +143,7 @@ function add_kawaii_switch() {
     var summary = document.getElementsByClassName("book-summary")[0];
     var btn = document.createElement("button");
     btn.style = "width:95%;margin-top:5px;";
-    btn.innerHTML = "我是萌豚: " + (kawaii_voice ? "是" : "否");
+    btn.innerHTML = "Meow (๑•̀ㅂ•́)و✧ : " + (kawaii_voice ? "是" : "否");
     btn.classList.add("kawaii-voice-switch-btn");
     btn.id = "switch";
     btn.addEventListener("click", kawaii_switch_btn_click);
@@ -153,7 +153,7 @@ function add_kawaii_switch() {
 function kawaii_switch_btn_click(){
     kawaii_voice = !kawaii_voice;
     check_kawaii_status();
-    document.getElementsByClassName("kawaii-voice-switch-btn")[0].innerHTML = "我是萌豚: " + (kawaii_voice ? "是" : "否");
+    document.getElementsByClassName("kawaii-voice-switch-btn")[0].innerHTML = "Meow (๑•̀ㅂ•́)و✧ : " + (kawaii_voice ? "是" : "否");
 }
 
 function check_kawaii_status(){
