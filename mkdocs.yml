@@ -1,0 +1,59 @@
+site_name: 'yyc12345 の Blog'
+site_description: 'yyc12345 の Blog'
+site_author: 'yyc12345'
+site_url: 'https://yyc12345.github.io/MyBlog/'
+
+copyright: 'Text is available under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-SA 4.0</a>.'
+
+nav:
+    - 主页: 
+        - '个人介绍': 'index.md'
+        - '别人家的Blog': 'urls.md'
+    - 程序开发:
+        - '目录': 'program/main.md'
+        - '20200202': 'program/20200202.md'
+    - 个人杂谈:
+        - '目录': 'diary/main.md'
+        - '20200202': 'diary/20200202.md'
+
+theme:
+  name: 'material'
+  font: false
+  palette:
+    primary: blue
+    accent: blue
+  language: 'zh'
+  favicon: './img/favicon.ico'
+  feature:
+    tabs: true
+  logo:
+    icon: 'book'
+
+plugins: []
+
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/yyc12345'
+
+markdown_extensions:
+  - admonition
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra_javascript:
+  - ./javascript/website.js

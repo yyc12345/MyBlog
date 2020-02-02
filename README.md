@@ -1,1 +1,3 @@
-# yyc12345 の Blog Repository
+# My blog
+
+This is my blog repository.
