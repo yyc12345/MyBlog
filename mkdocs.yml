@@ -16,6 +16,7 @@ nav:
         - '目录': 'diary/main.md'
         - '20200202-1': 'diary/20200202-1.md'
         - '20200202-2': 'diary/20200202-2.md'
+        - '20200214': 'diary/20200214.md'
 
 theme:
   name: 'material'
