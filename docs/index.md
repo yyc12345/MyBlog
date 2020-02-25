@@ -11,7 +11,10 @@
 
 ## 属性
 
-* Programmer. 主力语言：C#，方向：普通的Windows程序开发 + Net Core 2。会：Python，Visual Basic .Net，VisualBasic Script，*Pure* JavaScript，PHP。正在被强迫学习：C++
+* Programmer
+  - 主力语言：C\#（Windows开发：命令行，WinForm，WPF；跨平台开发：.Net Core 2），Python
+  - 会的语言：Visual Basic .Net，VisualBasic Script，PHP，最基本的C。
+  - 最痛恨的语言：C++（太花了，1st），Java（太裹脚布了，2nd），网页前端语言（JavaScript系的，HTML和CSS）（搞不懂的布局系统和乱七八糟的兼容性，3rd）
 * 大学生，就读学校不便透露，专业是微电子科学与工程
 * 1.9m
 * 100kg
@@ -32,6 +35,7 @@
 * 不喜欢强迫别人做事，总觉得自己很*独裁*
 * 自黑，过谦
 * 不希望他人看见自己失败的一面
+* 恋旧
 
 ## 职称
 
