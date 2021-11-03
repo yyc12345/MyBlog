@@ -27,23 +27,23 @@ nav:
         - '20211017': 'diary/20211017.md'
 
 theme:
-  name: 'material'
+  name: material
   font: false
   palette:
     primary: blue
     accent: blue
   language: 'zh'
-  favicon: './img/favicon.ico'
-  feature:
-    tabs: true
-  logo:
-    icon: 'book'
+  favicon: 'img/favicon.ico'
+  features:
+    - navigation.tabs
+  icon:
+    logo: 'material/book'
 
 plugins: []
 
 extra:
   social:
-    - type: 'github'
+    - icon: 'fontawesome/brands/github'
       link: 'https://github.com/yyc12345'
 
 markdown_extensions:
