@@ -30,8 +30,20 @@ theme:
   name: material
   font: false
   palette:
-    primary: blue
-    accent: blue
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/lightbulb
+        name: Switch to light mode
   language: 'zh'
   favicon: 'img/favicon.ico'
   features:
