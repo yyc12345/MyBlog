@@ -51,7 +51,7 @@
 
 ## 性格
 
-* 16 Personalities - [INFP-T \(Mediator\)](https://www.16personalities.com/infp-personality)
+* 16 Personalities - [INFP-T \(Mediator\)](https://www.16personalities.com/infp-personality)（我并不认同MBTI，我认为人的性格并不能通过一个问卷被简单粗暴地被分为所谓16种。这一条只是给那些热衷于用MBTI来衡量对面所站之人的人来看的，而我对此并不感兴趣。）
 * 直的，谁说我弯我打谁
 * 发誓永不女装
 * 发誓在我完成我设定的梦想之前永不谈恋爱
