@@ -17,8 +17,8 @@
     - 主力语言：
         * Python（快速出产原型，验证各种想法，处理日常破事专用）
         * C/C++（够我日常用而已，不精通）
-    - 会的语言：
         * C\#（Windows开发：命令行，WinForm，WPF；跨平台开发：.Net Core仅命令行；游戏开发：Godot中使用）。
+    - 会的语言：
         * Visual Basic .Net（忘完了）
         * VisualBasic Script（忘完了）
         * PHP（忘完了）
