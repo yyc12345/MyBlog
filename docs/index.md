@@ -19,6 +19,7 @@
         * C/C++（够我日常用而已，不精通）
         * C\#（Windows开发：命令行，WinForm，WPF；跨平台开发：.Net Core仅命令行；游戏开发：Godot中使用）。
     - 会的语言：
+        * Rust（每一次使用Rust，都要重新学一遍）
         * Visual Basic .Net（忘完了）
         * VisualBasic Script（忘完了）
         * PHP（忘完了）
@@ -44,7 +45,7 @@
     - osu!：很久没玩了
     - Stardew Valley：Minecraft代餐，至少耗时比Minecraft少，但是也没有Minecraft玩起来更爽。
     - Yuzusoft Galgame：你懂的
-- 正在学习：
+* 正在学习：
     - 日语：最终目的是啃生肉，以及想去日本玩一趟。
     - Blender：包括建模（刚体建模，植被建模，二次元人物建模），材质（非真实渲染，三渲二），动画，几何节点。
     - 画画：使用Krita + 数位板。最终目的是自己画出自己喜欢的画。
