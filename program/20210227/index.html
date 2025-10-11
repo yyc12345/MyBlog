@@ -1,0 +1,991 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="yyc12345 の Blog">
+      
+      
+        <meta name="author" content="yyc12345">
+      
+      
+        <link rel="canonical" href="https://yyc12345.github.io/MyBlog/program/20210227/">
+      
+      
+        <link rel="prev" href="../20210126/">
+      
+      
+        <link rel="next" href="../20231006/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>20210227 - yyc12345 の Blog</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bcfcd587.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#virtools-nlp" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="yyc12345 の Blog" class="md-header__button md-logo" aria-label="yyc12345 の Blog" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 22a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2h-6v7L9.5 7.5 7 9V2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            yyc12345 の Blog
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              20210227
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
+  主页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../main/" class="md-tabs__link">
+          
+  
+  程序开发
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../diary/main/" class="md-tabs__link">
+          
+  
+  个人杂谈
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="yyc12345 の Blog" class="md-nav__button md-logo" aria-label="yyc12345 の Blog" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 22a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2h-6v7L9.5 7.5 7 9V2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12Z"/></svg>
+
+    </a>
+    yyc12345 の Blog
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    主页
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            主页
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    个人介绍
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../urls/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    别人家的Blog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    程序开发
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            程序开发
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../main/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    目录
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20200202/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    20200202
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20200704/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    20200704
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210126/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    20210126
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    20210227
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20231006/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    20231006
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20240619/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    20240619
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250224/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    20250224
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20250814/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    20250814
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    个人杂谈
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            个人杂谈
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diary/main/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    目录
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diary/20200202-1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    20200202-1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diary/20200202-2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    20200202-2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diary/20200224/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    20200224
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diary/20200728/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    20200728
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diary/20210114/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    20210114
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diary/20211017/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    20211017
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diary/20230717/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    20230717
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diary/20240511/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    20240511
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diary/20241011/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    20241011
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="virtools-nlp">记一次Virtools NLP文件解析过程</h1>
+<p>Virtools是Dassault的一个已经弃坑的3D游戏引擎软件。因为我一直研究Ballance，而Ballance又是由Virtools作成的，因此研究Virtools也是我研究课题中的一部分。每一个Virtools版本都会有其对于的创作环境程序。而在其目录下会有一个名为<code>LanguagePacks</code>的文件夹，里面放着一个叫<code>english.nlp</code>的文件。从字面上理解，Virtools其实具有多语言支持。但是显然目前只能支持英文，没有其他类型的语言包。由于我本人对使用英文软件没有什么问题，尤其是Ballance制图一直以来使用的都是英文Virtools，我没有需要中文或者其他语言Virtools的需求。以及这个nlp文件不是human readable的文件，也不好轻易做多语言，因此我也没去管它。</p>
+<p>事情的契机来源于另一件事。HCF在Ballance吧发了个<a href="https://tieba.baidu.com/p/7222850419">帖子</a>，表示对Virtools的汉化遇到了困难。我本身对中文Virtools毫无好感，因此便快速略读了一番内容，然后离开。不料几日之后的回复让我又回到这里。用户名是<code>两只无聊的小猫</code>的用户和HCF之间的对话让我实在没有办法去接受。我没有办法接受没有严格的，科学的实验步骤就进行探究的行为。我无法接受这些，因此我昨日开始了对NLP文件的研究。</p>
+<p>虽然我无法接受HCF的对话，然而在HCF的对话中，我还是获得了一些有用的内容。首先，我之前并非完全没研究过NLP文件，我上网搜过，也搜到了NirLauncher，在我仔细研究了NirLauncher网站的软件功能描述后，我就可以断定NirLauncher不能打开这个文件。而帖子中丝毫没有对此的研判，就做出建议，这是不可接受的。一昧的只接受网络上的消息而不经过自己的思考就给出建议是不负责的。其次就是空文件的报错，一个是<code>LMResource.h</code>和<code>NeMOLMMake.exe</code>。我用Everything跑遍了Virtools SDK，没有找到匹配上述两段文字的内容，这就意味着我不能从Virtools SDK中轻易挖掘出这个文件的格式了。至于后者，那个exe文件，既然HCF已经发了出来，他肯定已经搜过了，况且Virtools那么旧的软件了，这种东西早就应该丢了，我个人是那么觉得的，尤其是看到NeMo这个词的时候，要知道NeMo是Virtools的旧称，在1.0到2.0版本的时候改成了Virtools。</p>
+<p>下面我就请来了大杀器，IDA，加载了Virtools 3.5的<code>devr.exe</code>然后准备从反汇编着手了。首先既然是语言包，那它肯定要从<code>LanguagePacks</code>下读NLP文件，我先全局搜索了一下<code>LanguagePacks</code>，直接就找到了，太让人惊喜，我原本还打算搜其它的诸如<code>nlp</code>，<code>LMResource.h</code>和<code>NeMOLMMake.exe</code>什么的。找到了自然不必说，直接找引用，也非常顺利，只有一个引用，之后我进入了函数<code>sub_4677C0</code>，开了反编译之后开始看代码，花了一些时间感受到了这个可能是个读取全文件夹的NLP文件然后搞什么一些其他操作，忽略一些杂项之后我来到了最后。一番分析后，感觉<code>sub_465B40</code>函数是负责读文件，然后<code>sub_465D90</code>函数是解析文件，我当时期望最好读完就是个文本文件，不要给我上二进制，这样我就不用看解析了，因为解析那个函数里面有800多行而且非常乱。相比较而言，读文件的<code>sub_465B40</code>就很简单，点进去反编译了一下。边看边改一些变量的名字方便分析。</p>
+<p>上来映入眼帘的就是<code>CKComputeDataCRC</code>和<code>CKUnPackData</code>这两个函数。<code>CKUnPackData</code>是一个CK2写的zlib轮子，可以直接用zlib的函数代替执行。<code>CKComputeDataCRC</code>也是个轮子函数，用zlib的<code>adler32</code>代替就行。分析的思路就不怎么说了，我也是比较凌乱分析搞出来的，总之就是先从认识的函数着手然后开始分析，然后结合Virtools文档摸清楚参数含义，进而进一步扩展分析。</p>
+<div class="highlight"><pre><span></span><code><span class="n">expectedDecompressedLength</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">-1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="p">(</span><span class="n">dword_6EBA28</span><span class="w"> </span><span class="o">^</span><span class="w"> </span><span class="o">*</span><span class="p">(</span><span class="n">_DWORD</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">compressBuffer</span><span class="p">[</span><span class="n">compressedBufferLength</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">8</span><span class="p">]);</span>
+<span class="n">decompressedBuffer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">CKUnPackData</span><span class="p">(</span><span class="n">expectedDecompressedLength</span><span class="p">,</span><span class="w"> </span><span class="n">compressBuffer</span><span class="p">,</span><span class="w"> </span><span class="n">compressedBufferLength</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">8</span><span class="p">);</span>
+</code></pre></div>
+<p>首先从<code>CKUnPackData</code>开始分析。解压部分的核心代码就像上面写的。此前我有过一小段NLP研究经历，我曾把NLP文件塞到我的DecompSpiritTrail工程的zlib解压模块里，有反应，但是塞到最后它始终出不来结果，卡死在最后一段。之所以塞zlib函数是因为我猜测这NLP文件也是用了什么压缩技术搞得不可读。说来比较奇怪，之前我用Notepad++开NLP文件后，显示乱码，感觉它的乱码显示和CMO的乱码有那么几分相似（CMO也是zlib压缩的）。然后冥冥之中觉得NLP也应该是zlib压缩的就试了试。没想到真的有反应。之前还用Everything搜过电脑里的NLP文件，想看看能不能从已安装软件中得到什么线索，万一NLP是个什么不知名的通用翻译程序创建的呢。但是搜索的结果表明NLP很可能是各用各家的标准这样一种情况。在那时候，我对NLP的研究就截止了，因为我不知道为什么zlib卡住了。</p>
+<p>而在这里，很明显看到有个长度的截断：不送最后8位字符。到这里就基本不用分析了，甚至连测试都不用做就知道怎么拆出文件了，但是由于制作语言包还需要复原文件，所以还需要知道这8位做了什么。由于<code>CKUnPackData</code>的第一个参数，<code>expectedDecompressedLength</code>指示着最终解压序列的长度，而溯源可以发现文件倒数第二个双字是表示最终解压序列的长度，但是要处理一下才是。找了下<code>dword_6EBA28</code>，是个定值<code>0x0F956A82C</code>对着反汇编代码跟着一通操作后，我读到了正确的数值。不过有意思的是，在这里我一开始一位后2个双字都是长度，一个UInt64，然后迷迷糊糊算错了，直到最后写回写部分才发现不是。</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">CKComputeDataCRC</span><span class="p">(</span>
+<span class="w">        </span><span class="o">*</span><span class="p">(</span><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="p">)(</span><span class="n">tsFileStorageOffset</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">filebody</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">8</span><span class="p">),</span>
+<span class="w">        </span><span class="o">*</span><span class="p">(</span><span class="n">_DWORD</span><span class="w"> </span><span class="o">*</span><span class="p">)(</span><span class="n">tsFileStorageOffset</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">filebody</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">12</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span>
+<span class="w">        </span><span class="mi">0</span><span class="p">)</span>
+<span class="w">    </span><span class="o">+</span><span class="w"> </span><span class="mi">1072</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="o">*</span><span class="p">(</span><span class="n">_DWORD</span><span class="w"> </span><span class="o">*</span><span class="p">)(</span><span class="o">*</span><span class="p">(</span><span class="n">_DWORD</span><span class="w"> </span><span class="o">*</span><span class="p">)(</span><span class="n">fileproperty</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">tsFileStorageOffset</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">12</span><span class="p">)</span>
+<span class="w">                        </span><span class="o">+</span><span class="w"> </span><span class="o">*</span><span class="p">(</span><span class="n">_DWORD</span><span class="w"> </span><span class="o">*</span><span class="p">)(</span><span class="n">tsFileStorageOffset</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">fileproperty</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">8</span><span class="p">)</span>
+<span class="w">                        </span><span class="o">-</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="p">)</span>
+<span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</code></pre></div>
+<p>下面是<code>CKComputeDataCRC</code>的部分，这里就是将文件最后一个双字和计算出的CRC32+<code>1072</code>的数值进行比较，所以最后一个双字存储的就是压缩后文件的CRC32数值+<code>1072</code>。此外，通过查找<code>CKComputeDataCRC</code>函数定义知道了这个CRC32计算初始值要用<code>0</code>而不是通常的<code>0xffffffff</code>。</p>
+<div class="highlight"><pre><span></span><code><span class="k">do</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">decompressedBuffer</span><span class="p">[</span><span class="n">result</span><span class="p">]</span><span class="w"> </span><span class="o">^=</span><span class="w"> </span><span class="o">*</span><span class="p">(</span><span class="n">_BYTE</span><span class="w"> </span><span class="o">*</span><span class="p">)((</span><span class="n">result</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0x7F</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">off_6EBAA8</span><span class="p">);</span>
+<span class="w">    </span><span class="o">++</span><span class="n">result</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">expectedDecompressedLength</span><span class="w"> </span><span class="p">);</span>
+</code></pre></div>
+<p>这样解压出来的文件仍然是不可读，我一度以为我解错了或者文件本身就是二进制的，直到我看到了上面的这个部分。这是一个加解密部分。<code>off_6EBAA8</code>是使用<code>dd offset</code>产生的一个对<code>dword_6EBA28</code>的偏移量，在反复研判之后（我比较菜，中间走了很多弯路），在<code>dword_6EBA28</code>对应部分找到了一个大小是<code>0x80</code>的表，这与<code>result &amp; 0x7F</code>契合完美。表如下。比较尴尬的是对于这个打表的理解我理解了几个小时才理解出来，之中还问了反汇编大佬61，我还是太菜了。而之前的用于解析真正的解压后序列长度的<code>dword_6EBA28</code>，是这个表的前4字节组成的双字。</p>
+<div class="highlight"><pre><span></span><code><span class="k">static</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">xorArray</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">byte</span><span class="p">[</span><span class="m">0</span><span class="n">x80</span><span class="p">]</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="m">0</span><span class="n">x2C</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xA8</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x56</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xF9</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xBD</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xA6</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x8D</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x15</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x25</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x38</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x1A</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xD4</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x65</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x58</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x28</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x37</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="m">0</span><span class="n">xFA</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x6B</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xB5</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xA1</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x2C</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x96</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x13</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xA2</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xAB</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x4F</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xC5</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xA1</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x3E</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xA7</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x91</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x8D</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="m">0</span><span class="n">x2C</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xDF</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x78</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x6D</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x3C</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xFC</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x92</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x1F</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x1A</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x62</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xA7</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x9C</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x92</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x29</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x44</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x6D</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="m">0</span><span class="n">x3D</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xA9</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x2B</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xE1</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x91</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xAD</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x49</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x3C</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xE2</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x33</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xD2</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x1A</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x55</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x92</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xE7</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x95</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="m">0</span><span class="n">x8C</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xDA</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xD2</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xCD</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xA2</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xCF</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x92</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x9A</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xE1</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xF9</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x3A</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x26</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xFA</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xC4</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xA9</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x23</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="m">0</span><span class="n">xA9</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x4D</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x1A</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x2C</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x3C</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x2A</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xAC</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x62</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xA3</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x92</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xAC</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x1F</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x3E</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xA6</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xC9</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xC8</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="m">0</span><span class="n">x63</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xCA</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x52</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xF9</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xFB</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x3A</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x9C</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x2A</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xB2</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x1A</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x8D</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x9A</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x8C</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x2A</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x9C</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x32</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="m">0</span><span class="n">xAA</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xC3</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xA2</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x97</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x34</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x92</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xFA</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x71</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xBE</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x3F</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xAC</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x28</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x22</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x9F</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xAC</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">xE8</span>
+<span class="p">};</span>
+</code></pre></div>
+<p>很明显，它对获得的数据进行了一个不是很高明的移位XOR解密。带入代码后，一个human readable的文本出现，其中甚至还有注释。这也就省去了我考虑二进制文件的时间。之后的回写也是轻松搞定，完成了NLP文件的分析。</p>
+<p>最终可用的代码我放到了<a href="https://github.com/yyc12345/gist/blob/master/VirtoolsNLP/Program.cs">我的gist里</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Text is available under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-SA 4.0</a>.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/yyc12345" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+        <script src="../../javascript/website.js"></script>
+      
+    
+  </body>
+</html>
